@@ -29,7 +29,8 @@ model = dict(
         image_model={{_base_.model.backbone}},
         text_model=dict(
             type='HuggingCLIPLanguageBackbone',
-            model_name='pretrained_models/clip-vit-base-patch32-projection',
+            # model_name='pretrained_models/clip-vit-base-patch32-projection',
+            model_name='/home/laughing/codes/YOLO-World/third_party/clip-vit-base-patch32',
             frozen_modules=['all'])),
     neck=dict(type='YOLOWolrdDualPAFPN',
               guide_channels=text_channels,

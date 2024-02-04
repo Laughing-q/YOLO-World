@@ -125,3 +125,4 @@ work_dirs
 # venus
 venus_run.sh
 
+third_party/
